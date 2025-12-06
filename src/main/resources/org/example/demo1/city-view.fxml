@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo1.controller.CityController">
+    <children>
+        <AnchorPane layoutX="360.0" layoutY="1.0" prefHeight="400.0" prefWidth="246.0">
+            <children>
+                <TableView fx:id="city_table" layoutX="-1.0" layoutY="-2.0" prefHeight="400.0" prefWidth="253.0">
+                    <columns>
+                        <TableColumn fx:id="city_table_id" prefWidth="75.0" text="ID" />
+                        <TableColumn fx:id="city_table_name" prefWidth="61.5999755859375" text="NAME" />
+                        <TableColumn fx:id="city_table_platecode" prefWidth="115.99999389648437" text="PLATE CODE" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <Label layoutX="144.0" layoutY="25.0" text="CITIES">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="34.0" layoutY="84.0" prefHeight="27.0" prefWidth="99.0" text="City Id">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="34.0" layoutY="124.0" prefHeight="27.0" prefWidth="99.0" text="City Name">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="34.0" layoutY="162.0" prefHeight="27.0" prefWidth="99.0" text="Plate Code">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="city_id" layoutX="144.0" layoutY="85.0" />
+        <TextField fx:id="city_name" layoutX="144.0" layoutY="125.0" />
+        <TextField fx:id="plate_code" layoutX="144.0" layoutY="163.0" />
+        <Button fx:id="get_btn" layoutX="32.0" layoutY="227.0" mnemonicParsing="false" onAction="#getCity" text="GET" />
+        <Button fx:id="create_btn" layoutX="95.0" layoutY="227.0" mnemonicParsing="false" onAction="#createCity" text="CREATE" />
+        <Button fx:id="update_btn" layoutX="180.0" layoutY="227.0" mnemonicParsing="false" onAction="#updateCity" text="UPDATE" />
+        <Button fx:id="delete_btn" layoutX="266.0" layoutY="227.0" mnemonicParsing="false" onAction="#deleteCity" text="DELETE" />
+        <Button fx:id="clean_btn" layoutX="95.0" layoutY="283.0" mnemonicParsing="false" onAction="#cleanCity" text="CLEAN" />
+        <Button fx:id="close_btn" layoutX="184.0" layoutY="283.0" mnemonicParsing="false" onAction="#close" text="CLOSE" />
+    </children>
+</AnchorPane>
